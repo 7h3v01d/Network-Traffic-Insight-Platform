@@ -15,6 +15,8 @@ This platform emphasizes:
 
 It does not provide offensive or exploit capabilities.
 
+---
+
 ### Key Capabilities
 
 Real-Time Observability
@@ -24,17 +26,23 @@ Real-Time Observability
 - Structured packet inspection view
 - Traffic statistics and session visibility
 
+---
+
 ### Export & Reporting
 
 - PCAP export for interoperability with tools such as Wireshark
 - CSV export for reporting and analytics workflows
 - Structured logging support
 
+---
+
 ### Operational Monitoring
 
 - Basic anomaly indicators
 - Network flow summaries
 - System resource monitoring integration
+
+---
 
 ### Architecture & Technology
 
@@ -44,6 +52,8 @@ Real-Time Observability
 - psutil (System telemetry integration)
 
 The architecture is modular and designed to support controlled feature expansion without introducing exploit-based functionality.
+
+---
 
 ### Deployment Requirements
 
@@ -56,65 +66,59 @@ The architecture is modular and designed to support controlled feature expansion
 pip install -r requirements.txt
 python main.py
 ```
-Governance & Responsible Use Policy
 
-This software captures and processes live network traffic.
+---
 
+### Governance & Responsible Use Policy
+
+This software captures and processes live network traffic.<br>
 Use is strictly limited to:
 
-Networks you own
-
-Networks you administer
-
-Networks where you have explicit written authorization to monitor
+- Networks you own
+- Networks you administer
+- Networks where you have explicit written authorization to monitor
 
 Unauthorized interception of communications may violate:
 
-Telecommunications legislation
-
-Privacy laws
-
-Data protection regulations
-
-Corporate policy frameworks
+- Telecommunications legislation
+- Privacy laws
+- Data protection regulations
+- Corporate policy frameworks
 
 Users are responsible for ensuring compliance with applicable laws and internal governance policies.
 
 The author and contributors accept no liability for misuse.
 
-Security & Data Handling Considerations
+---
+
+### Security & Data Handling Considerations
 
 Captured traffic may contain sensitive information, including:
 
-Credentials
-
-Authentication tokens
-
-Personal data
-
-Internal infrastructure metadata
+- Credentials
+- Authentication tokens
+- Personal data
+- Internal infrastructure metadata
 
 Organizations deploying this platform should:
 
-Apply appropriate data retention controls
+- Apply appropriate data retention controls
+- Secure exported capture files
+- Restrict access to authorized personnel
+- Comply with relevant privacy regulations
 
-Secure exported capture files
+---
 
-Restrict access to authorized personnel
-
-Comply with relevant privacy regulations
-
-Intended Use Cases
+### Intended Use Cases
 
 - Enterprise network diagnostics
-
 - Security operations visibility (non-intrusive)
-
 - Academic protocol analysis
-
 - Lab-based cybersecurity training
 
 Application debugging and traffic tracing
+
+---
 
 ### Explicit Non-Goals
 
@@ -127,6 +131,8 @@ This platform does not:
 - Facilitate unauthorized surveillance
 
 It is a passive analysis tool only.
+
+---
 
 ### License
 
